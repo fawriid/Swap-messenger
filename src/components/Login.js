@@ -6,6 +6,11 @@ import { FacebookFilled, GoogleOutlined, TwitterOutlined } from "@ant-design/ico
 // styles
 import styles from "./Login.module.css";
 
+//
+import firebase from "firebase";
+import { auth } from "../firebase";
+
+
 const Login = () => {
     return (
         <div className={styles.container}>
@@ -15,7 +20,10 @@ const Login = () => {
                         Wellcome to <span>Swap</span> Messenger <span>!</span>
                     </h2>
                 </div>
-                <div className={styles.option}>
+                <div
+                    className={styles.option}
+                    onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
+                >
                     <span>Sign in with Google </span>
                     <GoogleOutlined className={styles.logo} />
                 </div>
