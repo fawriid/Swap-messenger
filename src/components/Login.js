@@ -7,8 +7,8 @@ import { FacebookFilled, GoogleOutlined, TwitterOutlined } from "@ant-design/ico
 import styles from "./Login.module.css";
 
 //
-import firebase from "firebase";
-import { auth } from "../firebase";
+import firebase from "firebase/app";
+import { auth } from "../Firebase";
 
 
 const Login = () => {

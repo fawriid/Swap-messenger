@@ -1,16 +1,23 @@
+import { Navigate, Routes, Route } from "react-router-dom";
+
+// style
 import "./App.css";
-import { Navigate, Routes, Route, BrowserRouter } from "react-router-dom";
+
+// conmponent
 import Login from "./components/Login";
+
+// context
+import AuthContext from "./context/AuthContext";
 
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
+            <AuthContext>
                 <Routes>
                     <Route path="/" element={<Login />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
-            </BrowserRouter>
+            </AuthContext>
         </div>
     );
 }
