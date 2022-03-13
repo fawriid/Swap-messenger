@@ -1,0 +1,53 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.cardContainer {
+    background-color: #5c6b73;
+    border-radius: 10px;
+    padding: 3rem;
+}
+.intro {
+    margin-bottom: 2.5rem;
+}
+.intro span {
+    color: #c2dfe3;
+}
+.option {
+    background-color: #c2dfe3;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-radius: 10px;
+    color: #5c6b73;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    transition: all 200ms linear;
+}
+.option:last-child {
+    margin-bottom: 0.5rem;
+}
+.option:nth-child(3),
+.option:nth-child(4) {
+    opacity: 0.3;
+    cursor: default;
+}
+.option span {
+    margin-right: 10px;
+    text-align: center;
+}
+.option:nth-child(2):hover {
+    background-color: #84cbd4;
+    box-shadow: 1px 1px 15px rgba(250, 250, 250, 0.1);
+}
+.logo {
+    font-size: 2rem;
+}
