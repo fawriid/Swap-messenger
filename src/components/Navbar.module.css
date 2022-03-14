@@ -1,0 +1,26 @@
+.container{
+    height: 60px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5c6b73;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    background-color: #84cbd448;
+}
+.container >div {
+    margin: 1rem;
+    padding: 1rem;
+}
+.container .logout{
+    border-radius: 10px;
+    transition: all 200ms linear;
+    cursor: pointer;
+}
+.container .logout:hover{
+    /* background-color: #84cbd4; */
+    color: #252b2e;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
