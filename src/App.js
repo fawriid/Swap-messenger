@@ -2,10 +2,10 @@ import { Navigate, Routes, Route } from "react-router-dom";
 
 // style
 import "./App.css";
+import Chat from "./components/Chat";
 
 // conmponent
 import Login from "./components/Login";
-import Navbar from "./components/Navbar";
 
 // context
 import AuthContext from "./context/AuthContext";
@@ -14,8 +14,8 @@ function App() {
     return (
         <div className="App">
             <AuthContext>
-                <Navbar />
                 <Routes>
+                    <Route path='/chat' element={<Chat />} />
                     <Route path="/" element={<Login />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
